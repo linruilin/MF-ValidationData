@@ -1,0 +1,37 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": [
+            "jsdoc"
+        ]
+    },
+    "source": {
+        "include": [
+            "src",
+            "README.md"
+        ],
+        "exclude": [],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "templates": {
+        "logo": {
+            "link": "/mydoc/index.html"
+        },
+        "name": "LinRui.Lin doc library",
+        "footerText": "LinRui.Lin doc library",
+        "tabNames": {
+            "api": "API",
+            "tutorials": "Examples"
+        }
+    },
+    "opts": {
+        "template": "node_modules/tui-jsdoc-template",
+        "encoding": "utf8",
+        "destination": "./doc/",
+        "recurse": true
+    }
+}

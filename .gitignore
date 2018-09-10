@@ -1,0 +1,9 @@
+*.bat
+*.sh
+*.log
+/node_modules
+/package-lock.json
+.cache
+/coverage
+/doc
+.DS_Store

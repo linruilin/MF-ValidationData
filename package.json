@@ -1,0 +1,76 @@
+{
+    "name": "mf-validationdata",
+    "version": "1.0.0",
+    "description": "MF-ValidationData 是一个通用的数据验证组件",
+    "main": "build/index.js",
+    "scripts": {
+        "build": "babel -w src --out-dir build",
+        "build-test": "webpack --config ./webpack.config.js -w --progress --colors -p",
+        "test": "mocha test/**/tests.js --require babel-polyfill --compilers js:babel-register",
+        "test-cov": "karma start",
+        "doc": "jsdoc -c ./conf.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/linruilin/MF-ValidationData.git"
+    },
+    "author": {
+        "name": "linruilin",
+        "email": "limitlin@outlook.com",
+        "url": "https://www.linruilin.me"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/linruilin/MF-ValidationData/issues"
+    },
+    "maintainers": [
+        {
+            "name": "linruilin",
+            "email": "limitlin@outlook.com",
+            "url": "https://www.linruilin.me"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "linruilin",
+            "email": "limitlin@outlook.com",
+            "url": "https://www.linruilin.me"
+        }
+    ],
+    "homepage": "https://github.com/linruilin/MF-ValidationData#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "babel-cli": "*",
+        "babel-loader": "^7.1.1",
+        "babel-minify": "^0.2.0",
+        "babel-plugin-istanbul": "^2.0.1",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-stage-0": "^6.24.1",
+        "babel-register": "^6.26.0",
+        "babel-runtime": "^6.23.0",
+        "chai": "^4.1.2",
+        "css-loader": "^0.28.4",
+        "istanbul-instrumenter-loader": "^3.0.0",
+        "jsdoc": "^3.5.5",
+        "karma": "^1.3.0",
+        "karma-chai": "^0.1.0",
+        "karma-chrome-launcher": "^2.2.0",
+        "karma-coverage": "^1.1.1",
+        "karma-firefox-launcher": "^1.0.1",
+        "karma-jasmine": "^1.1.0",
+        "karma-mocha": "^1.3.0",
+        "karma-mocha-reporter": "^2.2.4",
+        "karma-safari-launcher": "^1.0.0",
+        "karma-sourcemap-loader": "^0.3.7",
+        "karma-spec-reporter": "^0.0.31",
+        "karma-webpack": "^2.0.5",
+        "less": "^2.7.2",
+        "less-loader": "^4.0.5",
+        "mocha": "^3.5.3",
+        "style-loader": "^0.18.2",
+        "tui-jsdoc-template": "^1.2.2",
+        "webpack": "^3.6.0",
+        "webpack-parallel-uglify-plugin": "^1.0.0"
+    }
+}
